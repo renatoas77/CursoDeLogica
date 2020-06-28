@@ -18,14 +18,12 @@ FimPara
 Escreval ()
 Escreva ("Reservar a cadeira: B")
 Leia (cad)
-Se (b[cad] > 0) e (b[cad] < 11) entao
+Se (cad > 0) e (cad < 11) entao
    Escreval ("Cadeira B", B[cad], " RESERVADA!")
    B[cad] <- 0
    Escreval ("Deseja reservar outra cadeira? S/N")
 Senao
    Escreva ("Cadeira indiponivel,deseja escolha outra cadeira? S/N")
 FimSe
-Leia (Resp)
-LimpaTela
-Ate Resp = ("N")
+
 fimalgoritmo
